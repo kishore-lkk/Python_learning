@@ -1,0 +1,12 @@
+https://example.com/login
+http://test.example.com/admin  
+https://api.example.com/v1/users
+http://TEST.example.com/admin
+# this is a note from teammate, ignore
+https://example.com/dashboard
+http://insecure.example.com:8080/status
+https://sub.example.com/../etc/passwd
+ftp://files.example.com/backup
+https://staging.example.com/api/health
+NOTASCAN
+https://example.com/api/v2/orders
