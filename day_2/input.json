@@ -1,5 +1,8 @@
 [
   "HTTP://Example.com/Login",
+  "http://999.999.999.999:8080/status",
+  "https://sUpport.Example.com/login",
+  "not a url at all",
   "https://api.example.com/v1/users",
   "example.com/dashboard",
   "http://TEST.example.com:8080/Admin/Panel",
@@ -11,5 +14,7 @@
   "not a url at all",
   "https://api.example.com/v1/users",
   "https://192.168.1.10:5000/debug",
-  "192.168.1.10:5000/Admin"
+  "192.168.1.10:5000/Admin",
+  "HTTP://example.com/users"
 ]
+
