@@ -1,0 +1,18 @@
+{
+    "valid_url": [
+        "http://example.com/Login",
+        "https://support.example.com/login",
+        "https://api.example.com/v1/users",
+        "https://example.com/dashboard",
+        "http://test.example.com:8080/Admin/Panel",
+        "https://sub.example.com/api/health",
+        "ftp://files.example.com/backup",
+        "https://www.example.com/orders",
+        "https://staging.example.com:443/status",
+        "http://insecure.example.com:8080/status",
+        "https://api.example.com/v1/users",
+        "https://192.168.1.10:5000/debug",
+        "https://192.168.1.10:5000/Admin",
+        "http://example.com/users"
+    ]
+}
