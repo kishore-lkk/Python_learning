@@ -1,0 +1,15 @@
+[
+  "https://api.example.com/v1/users",
+  "https://api.example.com/v1/orders",
+  "https://staging.example.com:443/status",
+  "https://staging.example.com:443/health",
+  "https://staging.example.com:443/metrics",
+  "https://192.168.1.10:5000/debug",
+  "https://192.168.1.10:5000/admin",
+  "https://admin.example.com/login",
+  "https://insecure.example.com:8080/status",
+  "https://insecure.example.com:8080/config",
+  "https://files.example.com/backup",
+  "https://sub.example.com/api/health",
+  "https://192.168.1.20:8443/panel"
+]

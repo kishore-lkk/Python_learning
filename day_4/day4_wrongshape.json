@@ -1,0 +1,4 @@
+{
+  "note": "this file is valid json but wrong shape",
+  "urls_key_missing_on_purpose": true
+}

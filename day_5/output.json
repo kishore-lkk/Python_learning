@@ -1,0 +1,18 @@
+{
+    "total_urls": 13,
+    "unique_domains": 8,
+    "domain_frequency": [
+        [
+            "staging.example.com",
+            3
+        ],
+        [
+            "api.example.com",
+            2
+        ],
+        [
+            "192.168.1.10",
+            2
+        ]
+    ]
+}

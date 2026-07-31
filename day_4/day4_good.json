@@ -1,0 +1,5 @@
+[
+  "https://api.example.com/v1/users",
+  "https://staging.example.com:443/status",
+  "https://192.168.1.10:5000/debug"
+]
