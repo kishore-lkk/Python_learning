@@ -1,0 +1,20 @@
+[
+  "HTTP://Example.com/Login",
+  "http://999.999.999.999:8080/status",
+  "https://sUpport.Example.com/login",
+  "not a url at all",
+  "https://api.example.com/v1/users",
+  "example.com/dashboard",
+  "http://TEST.example.com:8080/Admin/Panel",
+  "https://Sub.Example.COM/api/health",
+  "ftp://files.example.com/backup",
+  "www.example.com/orders",
+  "https://staging.example.com:443/status",
+  "http://insecure.example.com:8080/status",
+  "not a url at all",
+  "https://api.example.com/v1/users",
+  "https://192.168.1.10:5000/debug",
+  "192.168.1.10:5000/Admin",
+  "HTTP://example.com/users"
+]
+

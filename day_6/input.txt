@@ -1,0 +1,21 @@
+Incident Report - Case #4471
+
+On 2026-07-28 around 03:14 UTC, our EDR flagged suspicious outbound traffic from host WKS-1123.
+The connection was made to 185.220.101.47 on port 443, followed by a secondary beacon to
+45.155.205.233. DNS logs show a lookup for malicious-update-cdn.xyz just before the connection,
+and a related domain, secure-login-portal.net, was seen in a phishing email sent to three users
+earlier that day (see attached e.g. header dump for full trace).
+
+The dropped payload was identified via VirusTotal with the following hashes:
+  MD5:    44d88612fea8a8f36de82e1278abb02f
+  SHA1:   3395856ce81f2b7382dee72602f798b642f14140
+  SHA256: 2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae
+
+A second, unrelated sample was also uploaded for comparison, hash below:
+  SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+Internal host 192.168.1.45 briefly connected to 10.0.0.8 on the local segment before the
+external beacon began, likely lateral movement staging. The attacker's C2 panel was later
+found at fake-mail-gateway.co, with a fallback listener on 91.243.19.12.
+
+Analyst notes: check whether internal-test.local was ever contacted — so far no evidence.

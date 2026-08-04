@@ -1,0 +1,25 @@
+{
+    "ipv4": [
+        "185.220.101.47",
+        "45.155.205.233",
+        "192.168.1.45",
+        "10.0.0.8",
+        "91.243.19.12"
+    ],
+    "domains": [
+        "malicious-update-cdn.xyz",
+        "secure-login-portal.net",
+        "fake-mail-gateway.co",
+        "internal-test.local"
+    ],
+    "md5_hash": [
+        "44d88612fea8a8f36de82e1278abb02f"
+    ],
+    "sha_1": [
+        "3395856ce81f2b7382dee72602f798b642f14140"
+    ],
+    "sha_256": [
+        "2c26b46b68ffc68ff99b453c1d30413413422d706483bfa0f98a5e886266e7ae",
+        "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ]
+}

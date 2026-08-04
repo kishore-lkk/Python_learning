@@ -6,5 +6,3 @@ with open("Learning/day_1/input.txt", "r", encoding="utf-8") as rf:
                 if line.strip() not in  unique_link:
                     unique_link.add(line.strip())
                     wf.write(line.strip(" "))
-    wf.close()
-rf.close()
