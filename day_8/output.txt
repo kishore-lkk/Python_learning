@@ -1,0 +1,15 @@
+{
+    "valid_urls": {
+        "https://httpbin.io/status/200": 200,
+        "https://httpbin.io/status/301": 200,
+        "https://httpbin.io/status/403": 403,
+        "https://httpbin.io/status/404": 404,
+        "https://httpbin.io/status/500": 500,
+        "https://example.com": 200
+    },
+    "invalid_urls": [
+        "https://httpbin.io/delay/10",
+        "https://this-domain-should-not-exist-abc123xyz.com",
+        "https://192.0.2.1"
+    ]
+}
