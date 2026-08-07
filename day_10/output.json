@@ -1,0 +1,38 @@
+{
+    "https://secure-example.com": {
+        "present": [
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ]
+    },
+    "https://weak-example.com": {
+        "missing": [
+            "Strict-Transport-Security",
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ],
+        "present": [
+            "Content-Security-Policy"
+        ]
+    },
+    "https://bare-example.com": {
+        "missing": [
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ]
+    },
+    "https://partial-example.com": {
+        "present": [
+            "Strict-Transport-Security",
+            "X-Frame-Options"
+        ],
+        "missing": [
+            "Content-Security-Policy",
+            "X-Content-Type-Options"
+        ]
+    }
+}

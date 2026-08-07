@@ -4,12 +4,12 @@ import requests
 
 
 def https_checker(input):
-    https_checked = {"valid_urls" : {}, "invalid_urls" : []}
+    https_checked = {"valid_urls" : {}, "invalid_urls" : {}}
     for line in input:
         try:
             https_checked["valid_urls"].update({line : requests.get(line,timeout=10).status_code})
-        except:
-            https_checked["invalid_urls"].append(line)
+        except Exception as reason:
+            https_checked["invalid_urls"].update({line : str(reason)})
     return(https_checked)
     pass
 

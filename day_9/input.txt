@@ -1,0 +1,11 @@
+[
+  "https://httpbin.io/status/200",
+  "https://httpbin.io/status/301",
+  "https://httpbin.io/status/403",
+  "https://httpbin.io/status/404",
+  "https://httpbin.io/status/500",
+  "https://httpbin.io/delay/10",
+  "https://example.com",
+  "https://this-domain-should-not-exist-abc123xyz.com",
+  "https://192.0.2.1"
+]

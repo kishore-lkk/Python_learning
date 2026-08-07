@@ -1,0 +1,40 @@
+{
+  "https://secure-example.com": {
+    "status_code": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Strict-Transport-Security": "max-age=63072000; includeSubDomains; preload",
+      "Content-Security-Policy": "default-src 'self'; script-src 'self'",
+      "X-Frame-Options": "DENY",
+      "X-Content-Type-Options": "nosniff",
+      "Access-Control-Allow-Origin": "https://trusted-partner.com",
+      "Server": "nginx"
+    }
+  },
+  "https://weak-example.com": {
+    "status_code": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Content-Security-Policy": "default-src *",
+      "Access-Control-Allow-Origin": "*",
+      "Server": "Apache/2.4.41 (Ubuntu)"
+    }
+  },
+  "https://bare-example.com": {
+    "status_code": 200,
+    "headers": {
+      "Content-Type": "text/html",
+      "Date": "Thu, 06 Aug 2026 09:12:00 GMT",
+      "Content-Length": "512"
+    }
+  },
+  "https://partial-example.com": {
+    "status_code": 200,
+    "headers": {
+      "Content-Type": "application/json",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Strict-Transport-Security": "max-age=3600",
+      "Server": "cloudflare"
+    }
+  }
+}

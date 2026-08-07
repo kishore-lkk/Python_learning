@@ -1,15 +1,50 @@
 {
-    "valid_urls": {
-        "https://httpbin.io/status/200": 200,
-        "https://httpbin.io/status/301": 200,
-        "https://httpbin.io/status/403": 403,
-        "https://httpbin.io/status/404": 404,
-        "https://httpbin.io/status/500": 500,
-        "https://example.com": 200
+    "https://httpbin.io/status/200": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Thu, 06 Aug 2026 10:37:11 GMT",
+        "Content-Length": "0"
     },
-    "invalid_urls": [
-        "https://httpbin.io/delay/10",
-        "https://this-domain-should-not-exist-abc123xyz.com",
-        "https://192.0.2.1"
-    ]
+    "https://httpbin.io/status/301": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Thu, 06 Aug 2026 10:37:13 GMT",
+        "Content-Length": "363"
+    },
+    "https://httpbin.io/status/403": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Thu, 06 Aug 2026 10:37:14 GMT",
+        "Content-Length": "0"
+    },
+    "https://httpbin.io/status/404": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Thu, 06 Aug 2026 10:37:15 GMT",
+        "Content-Length": "0"
+    },
+    "https://httpbin.io/status/500": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Thu, 06 Aug 2026 10:37:16 GMT",
+        "Content-Length": "0"
+    },
+    "https://example.com": {
+        "Date": "Thu, 06 Aug 2026 10:37:16 GMT",
+        "Content-Type": "text/html",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "last-modified": "Thu, 06 Aug 2026 02:15:20 GMT",
+        "allow": "GET, HEAD",
+        "Age": "1017",
+        "cf-cache-status": "HIT",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "a26d67c3fb617ef4-MAA"
+    }
 }
