@@ -14,9 +14,6 @@ def header_checker(content):
     return(result)
 
 
-
-
-
 with open("Learning/day_10/input.json", "r", encoding="utf-8") as rf:
     content = json.load(rf)
 output = header_checker(content)

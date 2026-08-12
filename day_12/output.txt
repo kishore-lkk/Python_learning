@@ -1,0 +1,27 @@
+{
+    "https://example.com": {
+        "status": "success",
+        "status_code": 200,
+        "attempts": 1
+    },
+    "https://github.com": {
+        "status": "success",
+        "status_code": 200,
+        "attempts": 1
+    },
+    "http://localhost:8000/": {
+        "status": "failed",
+        "reason": "ConnectionError",
+        "attempts": 3
+    },
+    "http://10.255.255.1": {
+        "status": "failed",
+        "reason": "ConnectTimeout",
+        "attempts": 3
+    },
+    "https://this-domain-should-not-exist-abc123xyz.com": {
+        "status": "failed",
+        "reason": "ConnectionError",
+        "attempts": 3
+    }
+}

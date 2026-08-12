@@ -1,0 +1,7 @@
+[
+  "https://example.com",
+  "https://github.com",
+  "http://localhost:8000/",
+  "http://10.255.255.1",
+  "https://this-domain-should-not-exist-abc123xyz.com"
+]

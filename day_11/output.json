@@ -1,0 +1,49 @@
+{
+    "https://github.com": {
+        "_gh_sess": {
+            "secure": "present",
+            "SameSite": "present",
+            "HttpOnly": "present"
+        },
+        "_octo": {
+            "secure": "present",
+            "SameSite": "present",
+            "HttpOnly": "missing"
+        },
+        "logged_in": {
+            "secure": "present",
+            "SameSite": "present",
+            "HttpOnly": "present"
+        }
+    },
+    "https://www.wikipedia.org": {},
+    "https://httpbin.io/cookies/set/testcookie/12345": {},
+    "https://www.python.org": {},
+    "https://app.notion.com": {
+        "notion_browser_id": {
+            "secure": "present",
+            "SameSite": "missing",
+            "HttpOnly": "missing"
+        },
+        "notion_check_cookie_consent": {
+            "secure": "present",
+            "SameSite": "missing",
+            "HttpOnly": "missing"
+        },
+        "__cf_bm": {
+            "secure": "present",
+            "SameSite": "present",
+            "HttpOnly": "present"
+        },
+        "_cfuvid": {
+            "secure": "present",
+            "SameSite": "present",
+            "HttpOnly": "present"
+        },
+        "device_id": {
+            "secure": "present",
+            "SameSite": "missing",
+            "HttpOnly": "present"
+        }
+    }
+}
