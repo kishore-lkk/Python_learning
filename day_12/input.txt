@@ -3,5 +3,14 @@
   "https://github.com",
   "http://localhost:8000/",
   "http://10.255.255.1",
-  "https://this-domain-should-not-exist-abc123xyz.com"
+  "https://this-domain-should-not-exist-abc123xyz.com",
+  "https://www.google.com/",
+  "https://www.youtube.com/",
+  "https://isc.sans.edu/podcast.html",
+  "https://www.reddit.com/",
+  "https://www.netacad.com",
+  "https://www.hacker101.com/resources",
+  "https://explainshell.com/",
+  "https://discord.com",
+  "https://app.hackinghub.io/hubs/"
 ]

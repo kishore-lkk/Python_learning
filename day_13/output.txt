@@ -1,0 +1,72 @@
+{
+    "https://example.com": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://github.com": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "http://localhost:8000/": {
+        "status": "failed",
+        "error": "ConnectionError",
+        "attempt": 3
+    },
+    "http://10.255.255.1": {
+        "status": "failed",
+        "error": "ConnectTimeout",
+        "attempt": 3
+    },
+    "https://this-domain-should-not-exist-abc123xyz.com": {
+        "status": "failed",
+        "error": "ConnectionError",
+        "attempt": 3
+    },
+    "https://www.google.com/": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://www.youtube.com/": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://isc.sans.edu/podcast.html": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://www.reddit.com/": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://www.netacad.com": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://www.hacker101.com/resources": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://explainshell.com/": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://discord.com": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    },
+    "https://app.hackinghub.io/hubs/": {
+        "status": "success",
+        "status_code": 200,
+        "attempt": 1
+    }
+}
