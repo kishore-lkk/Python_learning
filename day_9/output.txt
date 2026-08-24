@@ -1,0 +1,50 @@
+{
+    "https://httpbin.io/status/200": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 22 Aug 2026 14:52:34 GMT",
+        "Content-Length": "0"
+    },
+    "https://httpbin.io/status/301": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Sat, 22 Aug 2026 14:52:35 GMT",
+        "Content-Length": "363"
+    },
+    "https://httpbin.io/status/403": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 22 Aug 2026 14:52:37 GMT",
+        "Content-Length": "0"
+    },
+    "https://httpbin.io/status/404": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 22 Aug 2026 14:52:38 GMT",
+        "Content-Length": "0"
+    },
+    "https://httpbin.io/status/500": {
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Origin": "*",
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sat, 22 Aug 2026 14:52:39 GMT",
+        "Content-Length": "0"
+    },
+    "https://example.com": {
+        "Date": "Sat, 22 Aug 2026 14:52:39 GMT",
+        "Content-Type": "text/html",
+        "Transfer-Encoding": "chunked",
+        "Connection": "keep-alive",
+        "Server": "cloudflare",
+        "last-modified": "Tue, 18 Aug 2026 20:06:42 GMT",
+        "allow": "GET, HEAD",
+        "Age": "10231",
+        "cf-cache-status": "HIT",
+        "Content-Encoding": "gzip",
+        "CF-RAY": "a2f2b3d9dfa9b2b5-BLR"
+    }
+}
