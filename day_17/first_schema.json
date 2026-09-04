@@ -1,0 +1,47 @@
+{
+	"$schema" : "https://json-schema.org/draft/2020-12/schema#",
+	"$id" : "http://hklabs.ub/first-schema",
+	"title" : "request response",
+	"description" : "response made from request library - contains : status_code, headers, and cookies",
+	"type" : "array",
+	"items": {
+		"type" : "object",
+		"properties": {
+			"url" : {
+			"description" : "url of the response",
+			"type" : "string"
+		},
+		"status" : {
+			"description" : "succeded or failed on the resolving the url",
+			"type" : "boolean"
+		},
+		"status_code" : {
+			"description" : "status code of the url resolved",
+			"type" : "integer"
+		},
+		"attempts" : {
+			"description" : "no of times attempted to request the url",
+			"type" : "integer"
+		},
+		"missing_headers": {
+			"description" : "security headers missing in the url landing page",
+			"type" : "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"header" : {"type" : "object", "properties": {"content-type" : {"type" : "string"},
+		"server":{"type":"string"},"content-length":{"type":["string", "null"]}}},
+		"cookies" : {"type" : "object"}
+	},
+	"required" : ["url","status","attempts","header","cookies"],
+	"if" :{
+		"properties": {
+			"status" :{"const": true}
+		}
+	},
+	"then": {
+		"required": ["status_code"]
+	}
+		}
+	}

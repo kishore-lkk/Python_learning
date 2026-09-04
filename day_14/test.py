@@ -1,17 +1,11 @@
-import requests
+test_cases = [
+    {},                          # Case 1: SameSite key missing entirely
+    {"SameSite": "None"},        # Case 2: explicitly SameSite=None (insecure)
+    {"SameSite": "Lax"},         # Case 3: SameSite=Lax
+    {"SameSite": "Strict"},      # Case 4: SameSite=Strict
+]
 
-
-def header(url):
-    header_dict = {}
-    header_data = requests.get(url).headers
-    header_dict.update({"content-type" : header_data['Content-Type']})
-    header_dict.update({"server" : header_data['Server']})
-    print(header_dict)
-
-
-
-
-
-with open("Learning/day_14/input.txt", "r", encoding="utf-8") as rf:
-    url_list = [ url.strip() for url in rf]
-    output = [header(url) for url in url_list]
+for rest in test_cases:
+    value = rest.get("SameSite")
+    result = "present" if value != "None" and value != None else "missing"
+    print(f"rest={rest} -> get()={value!r} -> your_code_says={result}")

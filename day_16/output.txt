@@ -1,0 +1,161 @@
+[
+    {
+        "url": "https://example.com",
+        "status": true,
+        "status_code": 200,
+        "attempts": 1,
+        "missing_headers": [
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ],
+        "header": {
+            "content-type": "text/html",
+            "server": "cloudflare",
+            "content-length": null
+        },
+        "cookies": {}
+    },
+    {
+        "url": "https://httpbin.org",
+        "status": true,
+        "status_code": 200,
+        "attempts": 1,
+        "missing_headers": [
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ],
+        "header": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "gunicorn/19.9.0",
+            "content-length": "9593"
+        },
+        "cookies": {}
+    },
+    {
+        "url": "https://www.google.com",
+        "status": true,
+        "status_code": 200,
+        "attempts": 1,
+        "missing_headers": [
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "X-Content-Type-Options"
+        ],
+        "header": {
+            "content-type": "text/html; charset=ISO-8859-1",
+            "server": "gws",
+            "content-length": null
+        },
+        "cookies": {
+            "__Secure-STRP": {
+                "secure": "present",
+                "SameSite": "present",
+                "HttpOnly": "missing"
+            },
+            "AEC": {
+                "secure": "present",
+                "SameSite": "present",
+                "HttpOnly": "missing"
+            },
+            "NID": {
+                "secure": "missing",
+                "SameSite": "missing",
+                "HttpOnly": "missing"
+            }
+        }
+    },
+    {
+        "url": "https://github.com",
+        "status": true,
+        "status_code": 200,
+        "attempts": 1,
+        "header": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "github.com",
+            "content-length": null
+        },
+        "missing_headers": [],
+        "cookies": {
+            "_gh_sess": {
+                "secure": "present",
+                "SameSite": "present",
+                "HttpOnly": "missing"
+            },
+            "_octo": {
+                "secure": "present",
+                "SameSite": "present",
+                "HttpOnly": "missing"
+            },
+            "logged_in": {
+                "secure": "present",
+                "SameSite": "present",
+                "HttpOnly": "missing"
+            }
+        }
+    },
+    {
+        "url": "https://www.wikipedia.org",
+        "status": true,
+        "status_code": 403,
+        "attempts": 1,
+        "missing_headers": [
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ],
+        "header": {
+            "content-type": "text/plain",
+            "server": "HAProxy",
+            "content-length": "126"
+        },
+        "cookies": {}
+    },
+    {
+        "url": "http://neverssl.com",
+        "status": true,
+        "status_code": 200,
+        "attempts": 1,
+        "missing_headers": [
+            "Strict-Transport-Security",
+            "Content-Security-Policy",
+            "X-Frame-Options",
+            "X-Content-Type-Options"
+        ],
+        "header": {
+            "content-type": "text/html; charset=UTF-8",
+            "server": "Apache/2.4.66 ()",
+            "content-length": "1900"
+        },
+        "cookies": {}
+    },
+    {
+        "url": "https://www.python.org",
+        "status": true,
+        "status_code": 200,
+        "attempts": 1,
+        "missing_headers": [
+            "Content-Security-Policy",
+            "X-Content-Type-Options"
+        ],
+        "header": {
+            "content-type": "text/html; charset=utf-8",
+            "server": "nginx",
+            "content-length": "11573"
+        },
+        "cookies": {}
+    },
+    {
+        "url": "https://this-domain-does-not-exist-12345.com",
+        "status": false,
+        "reason": "ConnectionError",
+        "attempts": 3,
+        "header": {},
+        "missing_headers": [],
+        "cookies": {}
+    }
+]
