@@ -9,12 +9,10 @@ class computer:
 
 
 
-
-
-
-
 com1 = computer("i5", 16)
 com2 = computer("ryzen 5", 32)
+
+print(com1.config())
 
 computer.config(com1)
 computer.config(com2)
