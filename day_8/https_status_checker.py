@@ -8,7 +8,7 @@ def https_checker(input):
     for line in input:
         try:
             https_checked["valid_urls"].update({line : requests.get(line,timeout=10).status_code})
-        except Exception as reason:
+        except requests.exceptions.RequestException as reason:
             https_checked["invalid_urls"].update({line : str(reason)})
     return(https_checked)
     pass
