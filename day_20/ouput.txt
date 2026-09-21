@@ -1,0 +1,46 @@
+{
+    "newly_added": [
+        "new_version",
+        "has_issues_check",
+        "new_name"
+    ],
+    "removed": [
+        "has_issues",
+        "name"
+    ],
+    "changed": {
+        "organization.site_admin": {
+            "old": false,
+            "new": true
+        },
+        "network_count": {
+            "old": 42597,
+            "new": 42598
+        },
+        "topics": {
+            "old": [
+                "editor",
+                "electron",
+                "microsoft",
+                "typescript",
+                "visual-studio-code"
+            ],
+            "new": [
+                "editor",
+                "electron",
+                "microsoft",
+                "typescript",
+                "visual-studio-code",
+                "python"
+            ]
+        },
+        "size": {
+            "old": 1470790,
+            "new": 1470791
+        },
+        "id": {
+            "old": 41881900,
+            "new": 41881901
+        }
+    }
+}
