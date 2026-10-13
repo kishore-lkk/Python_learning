@@ -1,0 +1,213 @@
+{
+    "links": [
+        "https://cksbakery.com/products/new-tropical-launch",
+        "https://cksbakery.com/products/chocolate-cakes-10-off",
+        "https://cksbakery.com/products/bento-tier-cakes-10-off",
+        "https://cksbakery.com/products/exotic-cakes-10-off",
+        "https://www.facebook.com/cksbakery/",
+        "https://www.instagram.com/cks_bakery/?hl=en",
+        "https://cksbakery.com/store-locator/bengaluru",
+        "https://cksbakery.com/store-locator/chengalpattu",
+        "https://cksbakery.com/store-locator/chennai",
+        "https://cksbakery.com/store-locator/coimbatore",
+        "https://cksbakery.com/store-locator/cuddalore",
+        "https://cksbakery.com/store-locator/erode",
+        "https://cksbakery.com/store-locator/kanchipuram",
+        "https://cksbakery.com/store-locator/madurai",
+        "https://cksbakery.com/store-locator/pondicherry",
+        "https://cksbakery.com/store-locator/tiruppur",
+        "https://cksbakery.com/store-locator/tiruvallur",
+        "https://cksbakery.com/store-locator/trichy",
+        "https://cksbakery.com/store-locator/vellore",
+        "https://cksbakery.com/store-locator/villupuram",
+        "https://www.uengage.io",
+        "https://www.uengage.in/"
+    ],
+    "forms": [
+        {
+            "action": null,
+            "method": null,
+            "input": [
+                {
+                    "name": null,
+                    "type": "text"
+                },
+                {
+                    "name": null,
+                    "type": "text"
+                },
+                {
+                    "name": null,
+                    "type": "text"
+                },
+                {
+                    "name": null,
+                    "type": "text"
+                },
+                {
+                    "name": "homeAddrType",
+                    "type": "radio"
+                },
+                {
+                    "name": "homeAddrType",
+                    "type": "radio"
+                },
+                {
+                    "name": "homeAddrType",
+                    "type": "radio"
+                },
+                {
+                    "name": "homeAddrType",
+                    "type": "radio"
+                },
+                {
+                    "name": null,
+                    "type": "hidden"
+                },
+                {
+                    "name": null,
+                    "type": "hidden"
+                },
+                {
+                    "name": null,
+                    "type": "hidden"
+                },
+                {
+                    "name": null,
+                    "type": "hidden"
+                },
+                {
+                    "name": null,
+                    "type": "hidden"
+                },
+                {
+                    "name": null,
+                    "type": "hidden"
+                }
+            ]
+        },
+        {
+            "action": null,
+            "method": null,
+            "input": [
+                {
+                    "name": null,
+                    "type": "hidden"
+                }
+            ]
+        },
+        {
+            "action": null,
+            "method": null,
+            "input": [
+                {
+                    "name": "name",
+                    "type": "text"
+                },
+                {
+                    "name": "email",
+                    "type": "email"
+                },
+                {
+                    "name": "fpGender",
+                    "type": "radio"
+                },
+                {
+                    "name": "fpGender",
+                    "type": "radio"
+                },
+                {
+                    "name": "dob",
+                    "type": "date"
+                },
+                {
+                    "name": "anniversary",
+                    "type": "date"
+                },
+                {
+                    "name": "referralcode",
+                    "type": "text"
+                }
+            ]
+        }
+    ],
+    "comments": [
+        "SEO",
+        "Single-language (en) storefronts: self-referential hreflang + x-default.",
+        "Open Graph",
+        "Twitter",
+        "JSON-LD: one @graph per page \u2014 global Organization + WebSite, plus any\n     page-specific nodes a controller passes in $pageSchema (Product, ItemList,\n     BreadcrumbList, LocalBusiness, \u2026). Built via app/Helpers/schema_helper.php.",
+        "Favicons",
+        "Preconnect (PageSpeed) \u2014 only the image CDN now; all libs/fonts are self-hosted.",
+        "Critical: jQuery in head (prod JS depends on it). Self-hosted under assets/.",
+        "Slick carousel \u2014 CI3 parity. Any [data-slick] auto-inits via slick_init.js.\n     Self-hosted (slick-carousel@1.8.1) under assets/slick/ \u2014 NOT assets/wla_new/\n     (that dir is in our staging excludes, so files under it never reach\n     UAT/prod). Without slick.min.css, `.slick-list` loses `overflow: hidden`\n     and carousels spill sideways. slick.min.css's relative url()s resolve to\n     assets/slick/fonts/ and assets/slick/ajax-loader.gif.",
+        "slick-theme provides the native `.slick-dots` styling. Without it, `dots: true`\n     carousels render invisible dots (slick.min.css is structural only).",
+        "defer: not needed for first paint. Runs before the deferred slick_init.js\n     (defer scripts execute in document order), so carousels still auto-init.\n     jQuery above stays eager since slick depends on it.",
+        "AppConfig bridge \u2014 must run before any page-script reads window.AppConfig.\n     Endpoint values come from .env only (no in-code defaults); missing keys\n     surface as empty strings so the failure is loud.",
+        "Bootstrap/Icons retained during migration \u2014 scheduled for removal in cleanup phase.\n     Self-hosted under assets/ (bootstrap@5.3.3, bootstrap-icons@1.11.3). The icon\n     CSS's relative url()s resolve to assets/bootstrap-icons/fonts/.",
+        "uEngage Design System",
+        "Active Orders \u2014 renders inside the profile sidebar (partials/active_orders.php,\n     included from partials/profile_sidebar.php). Generic, loaded site-wide,\n     same as the sidebar itself \u2014 no route exclusions.",
+        "Legacy theme.css \u2014 remove once home widgets are re-migrated",
+        "Footer styles (extracted from theme.css; loaded after to preserve cascade)",
+        "Shared modal styles (location picker + menu item/variant/combo popups).\n     Loaded when the location popup is configured OR on menu pages, which render\n     the item-detail / variant / combo popups whose CSS lives in this file.\n     NB: the Manage Addresses form + delete-confirm/toast styles live in theme.css\n     (global), so they no longer depend on this file being loaded.",
+        "Runtime brand tokens \u2014 DB-driven, applies to every brand (Theobroma, CBTL, new ones).\n     Darker/tinted shades are computed via color-mix() so only primary + secondary are stored.",
+        "Analytics \u2014 per-brand IDs (web_config) handed to the self-contained analytics.js module.\n     The module loads each vendor SDK itself and fires the funnel events. Adding a new provider\n     later = add an id key here + one provider object in analytics.js (no other file changes).",
+        "UTM capture \u2014 writes the first-party utm_data cookie on landing (read server-side at order confirmation)",
+        "Banner click tracking \u2014 one delegated listener for every banner widget (banners.php\n     emits data-banner-id on linked slides). Plain script, not a module: it only reads the\n     window.Analytics bridge, so it needs no imports.",
+        "Brand USP promo widget \u2014 client/getFilterList, using\n     window.AppConfig.homeOutletId (this page's resolved \"current\" outlet,\n     since home itself has no outlet context \u2014 see HomeController). The menu\n     page makes its OWN independent fetch of the same endpoint with the\n     actual outlet id (MenuController/menu.js) \u2014 same call shape, different\n     id source. This module fetches client-side and renders into home.php's\n     [data-usp-slot] placeholder, bailing out (rendering nothing) if the\n     brand has no live USP, home has no resolvable outlet, or the call\n     fails.",
+        "Peek-carousel rail: 2 full banners + a slim peek of the next on\n             desktop, ~1 full + peek on mobile. slidesToShow (not variableWidth)\n             so slick sizes each slide to listWidth / N \u2014 a fixed count that\n             never slices a banner's CTA mid-text regardless of viewport.\n             infinite:false is required: with infinite:true slick CENTERS a\n             fractional slidesToShow, splitting the remainder into a big peek on\n             BOTH sides (which re-slices adjacent CTAs); left-aligning keeps the\n             2 full banners flush-left with only the slim tail peeking. Pure CSS\n             scroll-snap fallback holds until slick boots.",
+        "JS: Bootstrap bundle (must load before login modal script). Self-hosted under assets/.",
+        "Global Login Modal (available on all pages) \u2014 bottom-sheet on mobile, top-aligned on desktop",
+        "Step 1: Phone",
+        "Social login \u2014 mobile only; social_login.js reveals each per UA + brand flags.\n                         Styling mirrors CI3 (.mail-btn/.mail-btns): full-width, rounded, bold.",
+        "Phone Number \u2014 mobile only; reveals the OTP form (CI3 loginWithOtpBtn)",
+        "T&C for the social view (mobile-initial). Hidden on desktop / once OTP form is shown.\n                         Mirrors #loginConsent state via JS so either can satisfy the consent gate.",
+        "OTP form \u2014 shown directly on desktop; revealed by \"Phone Number\" on mobile",
+        "Captcha",
+        "T&C \u2014 consent applies to every login method, sits above Send OTP on the OTP form view",
+        "Step 2: OTP",
+        "Error msg",
+        "Reassurance footer \u2014 shown on both steps",
+        "Truecaller polling modal \u2014 shown by social_login.js while waiting for the SDK callback",
+        "STEP: location",
+        "STEP: savedAddresses",
+        "STEP: enterAddress",
+        "The lookup itself already accepts a pincode for every brand (it's a\n                                 generic locality/pincode search, not gated) \u2014 only the \"ships pan-India\"\n                                 promise above is brand-specific, so this placeholder isn't $isPincodeJourney-gated.",
+        "STEP: addressForm",
+        "Full-width header (desktop) \u2014 mirrors the shared #addAddModal header.",
+        "Static centre pin (Google flow): fixed over the map centre; the map\n                                 moves under it. Replaces the deprecated google.maps.Marker. The\n                                 Leaflet flow below keeps its own L.marker (not deprecated).",
+        "Decorative pin coach-mark (centered above the map pin).",
+        "Geolocation (\"Use my location\") failure \u2014 shown on the MAP step so it's\n                             visible on mobile where the button lives, not hidden on the form step.",
+        "Confirmed-location green card (mirror of the shared #addAddModal card).",
+        "Locality & City are resolved from the map pin and shown in the green\n                                     confirmed-location card above, so the visible fields are hidden from the\n                                     form. The save payload still posts them via the hidden #homeAddrLocality /\n                                     #homeAddrCity inputs below (location_picker.js reads state + those).",
+        "STEP: orderType",
+        "Shown by renderOrderTypes() when the resolved outlet has no order\n                         type enabled: every card above is hidden, so without this the step\n                         renders as an empty panel under the heading. Two ways forward \u2014\n                         \"Change\" (above) to re-pick a location, or the full outlet list.",
+        "STEP: redirect",
+        "STEP: notServiceable",
+        "Raise a Concern (Help & Support) \u2014 global modal, wired by raiseConcern.js.\n     CI3 parity: #raseaconcern \u2192 /support/getConcernType + /support/raiseConcern.\n     The accordion is populated at runtime from the concern-type API.",
+        "Secondary picker for order / outlet selection \u2014 CI3 #other-inputs parity.",
+        "Global cart FAB \u2014 site-wide quick access to the cart. floating_cart.js reveals\n     it only when the user is logged in and the selected outlet's cart (v4_cart)\n     has items. Hidden on the menu/cart/checkout pages, which carry their own\n     cart UI. CI3 #cart_icon parity.",
+        "Login logic",
+        "AppConfig bridge \u2014 moved up to <head> earlier in the document.",
+        "Scroll + animation",
+        "First-time-login profile prompt \u2014 CI3 parity (#updateProfileModal_new), OTP-only.\n     Static dialog: only the close (skip) button dismisses it; no backdrop-click / Escape\n     handler is bound, mirroring CI3's backdrop:'static', keyboard:false. modal-lock.js\n     locks scroll automatically via [aria-modal]. firstLoginProfile.js drives it.",
+        "DOB + Anniversary side-by-side (CI3 col-md-6 parity) to keep the modal short.",
+        "Soft nudge: birthday/anniversary unlock loyalty treats (no emoji \u2014 inline SVG).",
+        "Referral code \u2014 ue_silver parity (.referCodeInput). Hidden by default;\n                     firstLoginProfile.js reveals it only for new users and prefills it from ?refer=.",
+        "Social login (WhatsApp + Truecaller) \u2014 reveals buttons per UA + brand flags, drives both flows",
+        "Welcome form: prompts for name after login (any method) and is enforced at payment (feedback #239)",
+        "Location picker \u2014 always loaded; handles both flow-enabled (modal) and flow-disabled (direct nav) cases",
+        "Pickup tooltip \u2014 toggles the .pickup-tip popover from any [data-pickup-trigger] (menu + checkout)",
+        "Slick init \u2014 initializes every [data-slick] element with its data-option config",
+        "Testimonial \"Read more\" \u2014 clamps long quotes so the carousel can't fluctuate the page",
+        "Profile sidebar \u2014 header-triggered drawer, available on every page",
+        "Global search \u2014 header search icon \u2192 dropdown (desktop) / strip (mobile).\n     Per-brand: addo_business.globalSearch.",
+        "Raise a Concern (Help & Support) \u2014 global modal opened from the profile sidebar",
+        "Global cart FAB \u2014 reveals #cartFab when logged in & the outlet cart has items",
+        "Scroll-to-top floating button \u2014 no-op where #scrollTopBtn isn't rendered (checkout/payment)",
+        "Active Orders \u2014 renders the section inside the profile sidebar. Generic,\n     wired on every page (no route exclusions, see the module's own header\n     comment). ES module for the activeOrderCard.js import, so type=\"module\"\n     rather than defer.",
+        "Match card thumbnails to their rendered size (upgrades /crops/160/ \u2192 /crops/256/ on wider cards)",
+        "\"Read more\" on the v2 testimonial cards (4-line clamp). Home only, and a\n     no-op for brands still on the v1 testimonials partial.",
+        "Prev/next for the v2 scroll-snap rails (collections). Reveals its controls\n     only where a rail actually overflows; no-op when no rail is on the page."
+    ]
+}
